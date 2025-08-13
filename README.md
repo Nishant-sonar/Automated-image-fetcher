@@ -1,127 +1,134 @@
-# AI-Powered Resume Builder
+# Automated Image Fetcher
 
-A modern, AI-powered resume builder with real-time preview and multi-format export capabilities.
+A Python and Flask-based web application for automated image extraction with advanced filtering and bulk download capabilities.
 
 ## 🚀 Live Demo
-[View Live Application](https://nishanttech.host20.uk/Resume-builder/)
+[View Live Application](https://automatedimagefetcher.zapsas.life/about.html)
 
 ## 📋 Overview
 
-This AI-powered resume builder leverages modern web technologies to deliver instant PDF generation and live resume previews with zero-lag performance. The application features an interactive assistant bot and achieves 85%+ ATS compatibility through responsive design.
+This automated image fetcher streamlines the process of extracting images from web sources using advanced web scraping techniques. Built with Python and Flask, it offers intelligent filtering options and bulk download functionality, achieving a 95% satisfaction rating from over 100 user testers.
 
 ## ✨ Key Features
 
-- **Real-time Preview**: Instant live resume previews with zero-lag performance
-- **AI-Powered Assistant**: Interactive bot to guide users and reduce form errors
-- **Multi-format Export**: PDF, HTML, and JSON export options
-- **ATS Compatibility**: 85%+ compatibility with Applicant Tracking Systems
-- **Analytics Integration**: Firebase analytics for user behavior tracking
-- **Responsive Design**: Optimized for all device sizes
-- **Zero-lag Performance**: Smooth user experience with instant updates
+- **Automated Image Extraction**: Leverages BeautifulSoup and Requests for intelligent web scraping
+- **Advanced Filtering**: Filter images by dimensions, file size, and format
+- **Multiple Format Support**: Supports .jpg, .jpeg, .png, and .webp formats
+- **Bulk Download**: Bundle multiple images into ZIP files for efficient transfer
+- **Intuitive UI**: User-friendly interface for specifying quantity and format preferences
+- **Performance Optimized**: Efficient processing and storage mechanisms
+- **High User Satisfaction**: 95% satisfaction rating from extensive user testing
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- **React.js** - Modern JavaScript framework for building user interfaces
-- **Tailwind CSS** - Utility-first CSS framework for styling
-- **JavaScript** - Core programming language
-
 ### Backend
-- **Python** - Server-side programming
-- **Flask** - Lightweight web framework
-- **WeasyPrint** - PDF generation library
+- **Python** - Core programming language for web scraping logic
+- **Flask** - Lightweight web framework for API and routing
+- **BeautifulSoup** - HTML/XML parsing for web scraping
+- **Requests** - HTTP library for web requests
 
-### Database & Analytics
-- **Firebase** - Analytics tracking and data management
+### Frontend
+- **HTML** - Structure and markup
+- **CSS** - Styling and responsive design
+- **JavaScript** - Interactive UI elements and client-side functionality
+
+### Additional Tools
+- **ZIP Compression** - For bundling multiple images
+- **Image Processing** - Dimension and format validation
 
 ## 🏗️ Architecture
 
-- **Frontend**: React.js with Tailwind CSS for responsive UI
-- **Backend**: Flask API for data processing and PDF generation
-- **PDF Engine**: WeasyPrint for high-quality PDF output
-- **Analytics**: Firebase integration for user tracking
-- **Export Formats**: PDF, HTML, JSON support
+- **Web Scraping Engine**: BeautifulSoup + Requests for intelligent image extraction
+- **Filtering System**: Multi-parameter filtering (size, dimensions, format)
+- **Download Manager**: ZIP compression for bulk downloads
+- **User Interface**: Responsive web interface built with HTML/CSS/JS
+- **Backend API**: Flask-based REST API for processing requests
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
 - Python 3.8+
-- npm or yarn
-
-### Installation
-
-1. Clone the repository
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v14 or higher)
-- Python 3.8+
-- npm or yarn
+- pip (Python package installer)
 
 ### Installation
 
 1. Clone the repository
 ```
-git clone https://github.com/Nishant-sonar/AI-Power-Resume-Builder.git
-cd AI-Power-Resume-Builder
+git clone https://github.com/Nishant-sonar/Automated-image-fetcher.git
+cd Automated-image-fetcher
 ```
 
-2. Install frontend dependencies
+2. Create a virtual environment (recommended)
 ```
-npm install
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. Install backend dependencies
+3. Install required dependencies
 ```
 pip install -r requirements.txt
 ```
 
-4. Set up environment variables
+4. Set up environment variables (if needed)
 ```
 cp .env.example .env
-# Add your Firebase configuration and other environment variables
+# Configure any necessary environment variables
 ```
 
-5. Start the development servers
-
-Frontend:
-```
-npm start
-```
-
-Backend:
+5. Run the application
 ```
 python app.py
 ```
 
-
-
-
+6. Open your browser and navigate to:
+```
+http://localhost:5000
+```
 
 ## 📱 Usage
 
-1. **Create Resume**: Fill in your personal information, experience, and skills
-2. **Real-time Preview**: Watch your resume update instantly as you type
-3. **AI Assistant**: Get guidance from the interactive bot for better content
-4. **Export Options**: Download in PDF, HTML, or JSON format
-5. **ATS Optimization**: Benefit from built-in ATS compatibility features
+1. **Enter Source URL**: Provide the website URL to extract images from
+2. **Set Filters**: Specify desired dimensions, file size limits, and formats
+3. **Choose Quantity**: Select the number of images to fetch
+4. **Select Formats**: Choose from .jpg, .jpeg, .png, .webp options
+5. **Download**: Get individual images or bulk download as ZIP file
 
 ## 🎯 Key Achievements
 
-- ✅ Zero-lag performance for real-time previews
-- ✅ 85%+ ATS compatibility rating
-- ✅ Multi-format export functionality
-- ✅ Interactive AI assistant integration
-- ✅ Responsive design across all devices
-- ✅ Firebase analytics integration
+- ✅ 95% user satisfaction rating from 100+ testers
+- ✅ Advanced filtering by dimensions, size, and format
+- ✅ Efficient bulk download with ZIP compression
+- ✅ Intuitive and responsive user interface
+- ✅ Optimized performance for large-scale image processing
+- ✅ Support for multiple popular image formats
 
 ## 📊 Performance Metrics
 
-- **Load Time**: < 2 seconds
-- **ATS Compatibility**: 85%+
-- **Export Speed**: Instant PDF generation
-- **User Error Reduction**: Real-time validation and AI guidance
+- **User Satisfaction**: 95% (100+ user testers)
+- **Supported Formats**: 4 major image formats
+- **Processing Speed**: Optimized for bulk operations
+- **UI Responsiveness**: Cross-device compatibility
+
+## 🔧 Technical Features
+
+### Web Scraping
+- BeautifulSoup for HTML parsing
+- Requests for efficient HTTP handling
+- Error handling and retry mechanisms
+
+### Image Processing
+- Dimension validation and filtering
+- File size optimization
+- Format conversion support
+
+### Download Management
+- ZIP compression for bulk downloads
+- Progress tracking for large operations
+- Efficient memory usage
+
+## 🌐 Live Application
+
+Experience the application live at: **[https://automatedimagefetcher.zapsas.life/about.html](https://automatedimagefetcher.zapsas.life/about.html)**
 
 ## 🤝 Contributing
 
@@ -139,13 +146,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Nishant Sonar**
 - GitHub: [@Nishant-sonar](https://github.com/Nishant-sonar)
-
+- Live Demo: [Automated Image Fetcher](https://automatedimagefetcher.zapsas.life/about.html)
 
 ## 🙏 Acknowledgments
 
-- Thanks to the open-source community for the amazing tools and libraries
-- WeasyPrint for excellent PDF generation capabilities
-- Firebase for analytics and hosting solutions
+- Thanks to the Python community for excellent libraries
+- BeautifulSoup and Requests developers for robust web scraping tools
+- All 100+ beta testers who provided valuable feedback
 
 ## 📞 Support
 
@@ -154,3 +161,7 @@ If you have any questions or run into issues, please open an issue on GitHub or 
 ---
 
 ⭐ **If you found this project helpful, please give it a star on GitHub!**
+
+**Try it live**: [https://automatedimagefetcher.zapsas.life/about.html](https://automatedimagefetcher.zapsas.life/about.html)
+
+
