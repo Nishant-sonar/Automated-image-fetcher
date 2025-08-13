@@ -1,7 +1,7 @@
 import requests
 
 # SerpApi API key (replace if needed for security)
-api_key = "97c239f191e97b518fad0bf8c6a7ce4164eada43aca1a89346defbb514e088ed"  # Replace as necessary
+api_key = "Enter Your Key"  # Replace as necessary
 
 def scrape_google_images(query, num_images=50):
     # Set up the request parameters
@@ -43,3 +43,4 @@ def scrape_google_images(query, num_images=50):
             "status": "error",
             "message": "Unexpected response structure. 'images_results' key not found."
         }
+
